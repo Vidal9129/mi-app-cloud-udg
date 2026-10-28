@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web Cloud - UdeG</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Imagen de fondo desde Unsplash */
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        /* Contenedor principal */
+        #main-container {
+            width: 90%;
+            max-width: 850px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+            margin: 20px 0;
+        }
+
+        /* Header con div y logo a la izquierda */
+        .site-header {
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .site-header img.logo {
+            height: 45px;
+            width: auto;
+            margin-right: 20px;
+        }
+
+        .site-header h1 {
+            font-size: 1.3rem;
+            color: #4fc3f7;
+        }
+
+        /* Cuerpo principal */
+        .main-body {
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .main-body h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .main-body p {
+            margin-bottom: 30px;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Enlace a video de streaming */
+        .streaming-link {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: #e50914;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+        }
+
+        .streaming-link:hover {
+            background-color: #b80710;
+            transform: translateY(-2px);
+        }
+
+        /* Footer con datos de identificación */
+        .site-footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b0bec5;
+        }
+
+        .site-footer p {
+            margin: 6px 0;
+        }
+
+        .site-footer span {
+            color: #ffffff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor general del sitio -->
+    <div id="main-container">
+
+        <!-- Header dentro de un div -->
+        <div class="site-header">
+            <!-- Logo alineado a la izquierda -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Logo de la plataforma" class="logo">
+            <h1>Portal de Despliegue en la Nube</h1>
+        </div>
+
+        <!-- Cuerpo del sitio -->
+        <div class="main-body">
+            <h2>Aplicación Web Estática en Nube Pública</h2>
+            <p>Este sitio ha sido desarrollado y publicado en la plataforma Render como evidencia práctica para el módulo de Computación en la Nube.</p>
+            
+            <!-- Enlace a video en servicio de streaming -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="streaming-link">
+                ▶ Ver Video en Streaming
+            </a>
+        </div>
+
+        <!-- Footer con datos personales -->
+        <div class="site-footer">
+            <p><strong>Curso:</strong> <span>Computación en la Nube</span></p>
+            <p><strong>Nombre del alumno:</strong> <span>Vidal Espinosa Romo</span></p>
+            <p><strong>Código:</strong> <span>224791297</span></p>
+            <p><strong>Correo de contacto:</strong> <span>vidal.espinosa9129@alumnos.udg.mx</span></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
